@@ -27,7 +27,7 @@
                     Object(r.jsx)("img", {
                       style: { width: "60px" },
                       alt: "app-logo",
-                      src: "https://www.feirox.com/rivu/2016/04/Klara-1-1.png",
+                      src: "https://cdn.glitch.com/47ad58f1-f213-4c8b-a7c4-9d5371005373%2F1337511_game_go_play_pokemon_storm_icon.png?v=1628609724266",
                     }),
                     Object(r.jsx)("p", { children: "Current Weather" }),
                   ],
@@ -47,7 +47,7 @@
                     }),
                     Object(r.jsx)("input", {
                       style: { borderRadius: "5px", padding: "5px" },
-                      placeholder: "city...",
+                      placeholder: "Enter Location...",
                       onKeyPress: function (t) {
                         return "Enter" === t.key && "" !== t.target.value
                           ? e.getLocation(t)

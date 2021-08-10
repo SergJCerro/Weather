@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #4b8dff;
+  background-color: #0cbaba;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -24,11 +24,12 @@ code {
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
-  background: #4281ee;
+
   border-radius: 10px;
   color: #fff;
   border-radius: 40px;
-  background: linear-gradient(145deg, #478aff, #3b74d6);
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
   opacity: 0;
   animation: appearFromNone 2s ease-in forwards;
 }
