@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+body {
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+.bx {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.8rem;
+}
+.submit-btn {
+  position: absolute;
+  top: 15.5%;
+  left: 9%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+input[type="text"] {
+  width: 14rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0 0 0.3rem 4.5rem;
+  color: #ffffff;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+input[type="text"]::placeholder {
+  color: #f3f3f3;
+}
+.error-msg {
+  text-align: center;
+  top: 22%;
+  position: absolute;
+  left: 6rem;
+  color: #000;
+  font-size: 15px;
+  display: none;
+  display: hidden;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+p {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  padding-left: 0.3rem;
+  font-weight: 700;
+}
+.location {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+.degrees {
+  font-size: 2.3rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.degrees::after {
+  content: "\00B0 F";
+  font-size: 2rem;
+  position: absolute;
+  left: 3.1rem;
+}
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  position: absolute;
+  /*border-left: 0.2rem solid rgba(255, 255, 255, 0.5);*/
+  top: 50%;
+  height: 10rem;
+  padding-left: 3.5rem;
+  justify-content: space-between;
+}
+.humidity::after {
+  content: "%";
+}
+
+.fade-in {
+  animation: fadeIn 0.2s;
+}
+
+.fade-in2 {
+  animation: fadeIn2 1.1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 6rem;
+  }
+  100% {
+    opacity: 0.5;
+    top: 4.4rem;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0.1;
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 62.5%;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  header {
+    height: 5.5rem;
+    position: relative;
+  }
+
+  form {
+    height: 100%;
+  }
+
+  .form-group {
+    float: right;
+    height: 80%;
+    position: relative;
+    margin: 2.5rem 3.5rem 0 0;
+  }
+
+  .submit-btn {
+    position: absolute;
+    top: 27%;
+    left: 6%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type="text"] {
+    width: 24rem;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 0 0.3rem 4.5rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+  }
+
+  input[type="text"]::placeholder {
+    color: #f3f3f3;
+  }
+
+  .error-msg {
+    display: hidden;
+    position: absolute;
+    left: 2rem;
+    color: #ff3333;
+    font-size: 15px;
+    display: none;
+  }
+
+  .main-weather-display {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+    margin-left: 10%;
+    color: #f3f3f3;
+  }
+
+  .condition {
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    padding-left: 0.3rem;
+  }
+
+  .location {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+  }
+
+  .degrees {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+  }
+
+  .degrees::after {
+    content: "\00B0 F";
+    font-size: 3rem;
+    position: absolute;
+    top: 1.8rem;
+    left: 17.3rem;
+  }
+
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
+    top: 45%;
+    left: 22.5rem;
+    height: 10rem;
+    padding-left: 3.5rem;
+    justify-content: space-between;
+  }
+
+  .feels-like {
+    position: relative;
+  }
+
+  .feels-like::after {
+    content: "\00B0 F";
+    position: absolute;
+    bottom: 1.1rem;
+    left: 11.4rem;
+    font-size: 1rem;
+  }
+
+  .humidity::after {
+    content: "%";
+  }
+
+  .fade-in {
+    animation: fadeIn 0.2s;
+  }
+
+  .fade-in2 {
+    animation: fadeIn2 1.1s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      top: 6rem;
+    }
+    100% {
+      opacity: 0.5;
+      top: 4.4rem;
+    }
+  }
+
+  @keyframes fadeIn2 {
+    0% {
+      opacity: 0.1;
+      transform: scale(0.9, 0.9);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
