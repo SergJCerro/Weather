@@ -238,11 +238,13 @@
                           (e.prev = 1),
                           (e.next = 4),
                           fetch(
-                            "https://api.openweathermap.org/data/2.5/weather?lat="
+                            `${process.env.URL}`
                               .concat(v[0], "&lon=")
                               .concat(
                                 v[1],
-                                "&appid=3069ae2718e40f8dc1998b7250e16f10&units=metric"
+                                `
+                                ${process.env.APP_KEY_ID}`
+                                
                               ),
                             q
                           )
