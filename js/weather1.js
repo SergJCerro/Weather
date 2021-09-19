@@ -340,7 +340,7 @@
                           m(!0),
                           (e.prev = 1),
                           (e.next = 4),
-                          fetch(z("germany"), q)
+                          fetch(z("belize"), q)
                         );
                       case 4:
                         if ((t = e.sent).ok) {
